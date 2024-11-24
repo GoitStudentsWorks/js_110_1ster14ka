@@ -104,3 +104,52 @@ height: 40px;
     color: #292929;
     font-weight: bold;
 }
+/* Адаптивні стилі для планшетів та телефонів */
+@media (max-width: 768px) {
+    .results-container {
+        padding: 60px 32px 24px 32px;
+    }
+    .coments-list {
+        justify-content: center; /* Центруємо лише один коментар */
+    }
+
+    .coments-text {
+        width: 100%; /* Заповнюємо всю ширину екрану */
+        margin: 0 auto; /* Центруємо коментар */
+    }
+
+    .btn-section {
+        justify-content: center; /* Центруємо кнопки на маленьких екранах */
+    }
+}
+
+@media(max-width: 480px) {
+    .results-container {
+        padding: 40px 20px 24px 20px;
+    }
+
+    .coments-list {
+        justify-content: center; /* Центруємо лише один коментар */
+    }
+
+    .coments-text {
+        border-radius: 16px;
+padding: 32px;
+width: 320px;
+height: 296px;
+    }
+
+    .btn-section {
+        justify-content: center; /* Центруємо кнопки на маленьких екранах */
+    }
+
+    .reviews-title{
+        font-weight: 400;
+font-size: 52px;
+line-height: 1.23077;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #292929;
+    }
+    
+}
