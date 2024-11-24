@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
     const reviewsList = document.querySelector('.coments-list');
     const prevButton = document.querySelector('.btn-prev');
     const nextButton = document.querySelector('.btn-next');
@@ -11,9 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const createMarkup = (reviews) => {
       return reviews.map(review => `
         <li class="coments-text">
-          <p class="author-text">${review.text}</p>
+          <p class="author-text">${review.review}</p>
           <div class="coments-author">
-            <img src="${review.avatar}" alt="${review.author}" class="author-icon">
+            <img src="${review.avatar_url}" alt="${review.author}" class="author-icon">
             <p class="author-name">${review.author}</p>
           </div>
         </li>
@@ -41,8 +40,17 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Функція для оновлення кнопок
     const updateButtons = () => {
-      prevButton.classList.toggle('btn-prev-hidden', currentIndex === 0);
-      nextButton.classList.toggle('btn-next-hidden', currentIndex >= reviews.length - 2);
+        if(currentIndex===0){
+            prevButton.classList.replace("btn-prev","btn-prev-hidden");   
+        }else{
+            prevButton.classList.replace("btn-prev-hidden","btn-prev");
+        }
+
+        if(currentIndex>= reviews.length-2){
+            nextButton.classList.replace("btn-next","btn-next-hidden");
+        }else{
+            nextButton.classList.replace("btn-next-hidden","btn-next");
+        }
     };
   
     // Функція для перемикання слайдів
@@ -55,6 +63,47 @@ document.addEventListener('DOMContentLoaded', () => {
       reviewsList.innerHTML = createMarkup(reviews.slice(currentIndex, currentIndex + 2));
       updateButtons();
     };
+
+    document.addEventListener('keydown', (event)=>{
+        if(event.key === 'ArrowLeft'){
+            slide('prev');
+        }else if(event.key === 'ArrowRight'){
+            slide('next');
+        }
+    });
+
+    document.addEventListener('keydown', (event)=>{
+        if(event.key === 'Tab'){
+            event.preventDefault(); 
+        }
+
+        if(event.shiftKey){
+            slide('prev');
+        }else{
+            slide('next');
+        }
+    });
+    
+    reviewsList.addEventListener('touchstart', (event) => {
+        if (!isSwipeEnabled) return; // Якщо свайп не дозволено, не обробляємо події
+        startX = event.touches[0].clientX; // отримуємо координати початку жесту
+      });
+      
+      reviewsList.addEventListener('touchend', (event) => {
+        if (!isSwipeEnabled) return; // Якщо свайп не дозволено, не обробляємо події
+        endX = event.changedTouches[0].clientX; // отримуємо координати кінця жесту
+      
+        // Якщо свайп праворуч, перемикаємо в наступний коментар
+        if (startX > endX) {
+          slide('next');
+        }
+        // Якщо свайп ліворуч, перемикаємо в попередній коментар
+        if (startX < endX) {
+          slide('prev');
+        }
+        isSwipeEnabled = false; // Відключаємо свайп після завершення
+      });
+      
   
     // Додавання обробників подій
     prevButton.addEventListener('click', () => slide('prev'));
@@ -62,5 +111,5 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Ініціалізація
     fetchReviews();
-  });
+  
   
