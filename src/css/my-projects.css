@@ -100,12 +100,6 @@
     margin-top: 40px;
 }
 
-.btn {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 0px;
 .js-load-more,
 .js-show-less {
   display: flex;
@@ -132,21 +126,6 @@
     position: relative;
 }
 
-.btn::after {
-    content: "";
-    position: absolute;
-    bottom: 15px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 2px;
-    width: 113px;
-    background-color: #00B068;
-}
-
-.btn:hover,
-.btn:focus {
-    color: #00B068;
 .js-load-more::after,
 .js-show-less::after {
   content: '';
