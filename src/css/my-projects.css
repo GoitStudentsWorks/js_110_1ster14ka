@@ -100,12 +100,22 @@
     margin-top: 40px;
 }
 
+<<<<<<< Updated upstream
 .btn {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     gap: 0px;
+=======
+.js-load-more,
+.js-show-less {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0px;
+>>>>>>> Stashed changes
 
     width: 154px;
     height: 52px;
@@ -125,6 +135,7 @@
     position: relative;
 }
 
+<<<<<<< Updated upstream
 .btn::after {
     content: "";
     position: absolute;
@@ -140,6 +151,26 @@
 .btn:hover,
 .btn:focus {
     color: #00B068;
+=======
+.js-load-more::after,
+.js-show-less::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 2px;
+  width: 113px;
+  background-color: #00b068;
+}
+
+.js-load-more:hover,
+.js-show-less:hover,
+.js-load-more:focus,
+.js-show-less:focus {
+  color: #00b068;
+>>>>>>> Stashed changes
 }
 
 @media screen and (min-width: 768px) {
