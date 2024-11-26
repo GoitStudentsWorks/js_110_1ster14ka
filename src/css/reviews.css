@@ -3,158 +3,127 @@
 }
 
 .reviews-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
   font-family: 'Impact', sans-serif;
+}
+
+.error {
+  text-align: center;
   font-weight: 400;
   font-size: 108px;
-  line-height: 1.14815;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #292929;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-.btn-section {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 32px 0 32px;
-  gap: 24px;
 }
 
-.btn-prev {
-  border: 1px solid #292929;
-  border-radius: 8px;
-  padding: 12px;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
+.swiper-btn:hover:not(.swiper-button-disabled),
+.swiper-btn:focus:not(.swiper-button-disabled) {
+  background-color: #e4e5e6;
 }
 
-.btn-prev-hidden {
-  border: 1px solid #e4e5e6;
-  border-radius: 8px;
-  padding: 12px;
-  width: 48px;
-  height: 48px;
-  fill: #e4e5e6;
-}
-
-.btn-next {
-  border: 1px solid #292929;
-  border-radius: 8px;
-  padding: 12px;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-}
-
-.btn-next-hidden {
-  border: 1px solid #e4e5e6;
-  border-radius: 8px;
-  padding: 12px;
-  width: 48px;
-  height: 48px;
-  fill: #e4e5e6;
-}
-
-.results-container {
-  padding: 80px 32px 24px 32px;
-}
-.coments-list {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.coments-text {
-  display: flex;
-  flex-direction: column;
-  border-radius: 16px;
-  padding: 32px;
-  width: 592px;
-  height: auto;
-  background: #e4e5e6;
-  font-family: 'Poppins', sans-serif;
+.review-p {
+  font-family: 'Popins', sans-serif;
   font-weight: 300;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 150%;
   letter-spacing: 0.03em;
   color: #292929;
 }
-.author-text {
-  padding: 0;
-  margin: 0;
+
+@media (min-width: 768px) {
+  .reviews-title {
+    margin-bottom: 60px;
+    font-size: 108px;
+    line-height: 115%;
+    letter-spacing: 0.02em;
+  }
+  .reviews {
+    padding-top: 124px;
+  }
 }
-.author-icon {
+
+.reviews-text {
+  margin: 0 0 24px 0;
+}
+
+.reviews .swiper-wrapper {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1280px) {
+  .reviews-title {
+    margin-bottom: 80px;
+  }
+  .reviews {
+    padding-top: 164px;
+  }
+}
+
+.reviews .swiper-slide {
+  border-radius: 16px;
+  padding: 32px;
+  background: #e4e5e6;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviews-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.reviews-wrapper-img {
   border-radius: 24px;
   width: 40px;
   height: 40px;
+  overflow: hidden;
 }
-.coments-author {
-  display: flex;
-  align-items: center;
-  margin-top: auto;
-  gap: 16px;
-}
-.author-name {
-  font-family: 'Poppins', sans-serif;
+
+.reviews-name {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
-  font-weight: bold;
+  text-transform: none;
 }
-/* Адаптивні стилі для планшетів та телефонів */
-@media (max-width: 768px) {
-  .reviews {
-    padding-top: 124px;
-  }
-  .results-container {
-    padding: 60px 32px 24px 32px;
-  }
-  .coments-list {
-    justify-content: center; /* Центруємо лише один коментар */
-  }
 
-  .coments-text {
-    width: 100%; /* Заповнюємо всю ширину екрану */
-    margin: 0 auto; /* Центруємо коментар */
-  }
+.swiper-btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
 
-  .btn-section {
-    justify-content: center; /* Центруємо кнопки на маленьких екранах */
+@media (min-width: 1280px) {
+  .swiper-btn-list {
+    gap: 24px;
+  }
+}
+@media (min-width: 1280px) {
+  .swiper-btn {
+    padding: 11px;
   }
 }
 
-@media (max-width: 480px) {
-  .results-container {
-    padding: 40px 20px 24px 20px;
-  }
+.swiper-btn {
+  border: 1px solid #292929;
+  fill: #292929;
+  padding: 7px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  .coments-list {
-    justify-content: center; /* Центруємо лише один коментар */
-  }
-
-  .coments-text {
-    border-radius: 16px;
-    padding: 32px;
-    width: 320px;
-    height: auto;
-  }
-
-  .btn-section {
-    justify-content: center; /* Центруємо кнопки на маленьких екранах */
-  }
-
-  .reviews-title {
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23077;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #292929;
-  }
+.swiper-button-disabled {
+  cursor: auto;
+  border-color: #e4e5e6;
+  fill: #e4e5e6;
 }
