@@ -1,5 +1,9 @@
+.reviews {
+  padding-top: 80px;
+}
+
 .reviews-title {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 108px;
   line-height: 1.14815;
@@ -70,7 +74,7 @@
   border-radius: 16px;
   padding: 32px;
   width: 592px;
-  height: 224px;
+  height: auto;
   background: #e4e5e6;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -105,6 +109,9 @@
 }
 /* Адаптивні стилі для планшетів та телефонів */
 @media (max-width: 768px) {
+  .reviews {
+    padding-top: 124px;
+  }
   .results-container {
     padding: 60px 32px 24px 32px;
   }
@@ -135,7 +142,7 @@
     border-radius: 16px;
     padding: 32px;
     width: 320px;
-    height: 296px;
+    height: auto;
   }
 
   .btn-section {
