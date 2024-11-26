@@ -104,7 +104,8 @@
   margin-top: 40px;
 }
 
-.btn {
+.js-load-more,
+.js-show-less {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -129,7 +130,8 @@
   position: relative;
 }
 
-.btn::after {
+.js-load-more::after,
+.js-show-less::after {
   content: '';
   position: absolute;
   bottom: 15px;
@@ -141,8 +143,10 @@
   background-color: #00b068;
 }
 
-.btn:hover,
-.btn:focus {
+.js-load-more:hover,
+.js-show-less:hover,
+.js-load-more:focus,
+.js-show-less:focus {
   color: #00b068;
 }
 
