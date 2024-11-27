@@ -88,6 +88,7 @@
 
 .faq-icon {
   cursor: pointer;
+  color: var(--base-text-color) !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -193,4 +194,16 @@
   .ac-header {
     max-width: 488px;
   }
+}
+
+.opened {
+  border-bottom: none !important;
+  border-radius: 16px !important;
+  background-color: var(--accent-element-color) !important;
+}
+
+.closed {
+  border-bottom: 1px solid var(--additional-bcg-color) !important;
+  border-radius: none !important;
+  background-color: var(--base-bcg-color) !important;
 }
