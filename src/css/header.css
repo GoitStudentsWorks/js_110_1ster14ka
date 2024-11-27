@@ -89,11 +89,15 @@ input:checked+.slider:before {
 .navigation {
   display: none;
 }
-.nav-list {
+/* .nav-list {
 }
 .nav-item {
-}
+} */
 .icon-burger {
+  fill: var(--base-text-color);
+}
+.icon-close {
+  fill: var(--base-text-color);
 }
 
 .burger-btn {
