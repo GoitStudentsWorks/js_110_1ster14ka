@@ -15,10 +15,8 @@ const accordion = new Accordion(faqContainer, {
     const allQuestions = document.querySelectorAll('.ac');
 
     allQuestions.forEach(question => {
-      console.log('Before:', question.className);
       question.classList.remove('opened', 'closed');
       question.classList.add('closed');
-      console.log('After:', question.className);
     });
 
     //styles change when opening
