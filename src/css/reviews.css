@@ -23,12 +23,6 @@
   padding: 0;
   margin: 0;
 }
-.btn-section {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 32px 0 32px;
-  gap: 24px;
-}
 
 .btn-prev {
   border: 1px solid var(--base-text-color);
@@ -64,28 +58,6 @@
   width: 48px;
   height: 48px;
   fill: var(--additional-bcg-color);
-}
-
-.results-container {
-  padding: 80px 32px 24px 32px;
-}
-.coments-list {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.coments-text {
-  display: flex;
-  flex-direction: column;
-  border-radius: 16px;
-  padding: 32px;
-  width: 592px;
-  height: auto;
-  background: var(--additional-bcg-color);
-  font-family: 'Poppins', sans-serif;
 }
 
 .swiper-btn:hover:not(.swiper-button-disabled),
@@ -176,40 +148,7 @@
     gap: 24px;
   }
 }
-@media (min-width: 1280px) {
-  .swiper-btn {
-    padding: 11px;
-  }
-}
 
-@media (max-width: 480px) {
-  .results-container {
-    padding: 40px 20px 24px 20px;
-  }
-
-  .coments-list {
-    justify-content: center; /* Центруємо лише один коментар */
-  }
-
-  .coments-text {
-    border-radius: 16px;
-    padding: 32px;
-    width: 320px;
-    height: auto;
-  }
-
-  .btn-section {
-    justify-content: center; /* Центруємо кнопки на маленьких екранах */
-  }
-
-  .reviews-title {
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23077;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--base-text-color);
-  }
 .swiper-btn {
   border: 1px solid var(--base-text-color);
   fill: var(--base-text-color);
@@ -226,5 +165,4 @@
   cursor: auto;
   border-color: var(--additional-bcg-color);
   fill: var(--additional-bcg-color);
-}
 }
