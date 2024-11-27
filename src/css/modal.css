@@ -9,7 +9,7 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  background-color: #f0f0f0;
+  background-color: var(--base-bcg-color);
 }
 .test {
   margin: 0 auto;

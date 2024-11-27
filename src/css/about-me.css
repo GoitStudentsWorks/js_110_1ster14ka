@@ -10,7 +10,7 @@
   margin-bottom: 40px;
 }
 .span-me {
-  color: #00b068;
+  color: var(--accent-text-color);
 }
 
 .img-about {
@@ -84,7 +84,7 @@
   border-radius: 1px;
   width: 4px;
   height: 4px;
-  background-color: #00b068;
+  background-color: var(--accent-text-color);
 }
 
 @media only screen and (min-width: 768px) {

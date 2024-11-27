@@ -26,7 +26,7 @@
   line-height: 1.23077;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--base-text-color);
 
   text-align: center;
 
@@ -34,11 +34,12 @@
 }
 
 .catalog-title > span {
-  color: #00b068;
+  color: var(--accent-text-color);
 }
 
 .project-photo {
   margin-bottom: 12px;
+  border-radius: 24px;
 }
 
 .technologies {
@@ -47,7 +48,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--base-text-color);
 
   margin-bottom: 16px;
 }
@@ -66,7 +67,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--base-text-color);
 }
 
 .project-link {
@@ -82,20 +83,20 @@
   width: 125px;
   height: 48px;
 
-  background: #e4e5e6;
+  background: var(--additional-bcg-color);
 
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--base-text-color);
   text-transform: uppercase;
 }
 
 .project-link:hover,
 .project-link:focus {
-  background: #bbb;
+  background: var(--hover-bcg-color);
 }
 
 .btn-container {
@@ -104,7 +105,8 @@
   margin-top: 40px;
 }
 
-.btn {
+.js-load-more,
+.js-show-less {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -124,12 +126,13 @@
   line-height: 1.55556;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--base-text-color);
 
   position: relative;
 }
 
-.btn::after {
+.js-load-more::after,
+.js-show-less::after {
   content: '';
   position: absolute;
   bottom: 15px;
@@ -138,12 +141,14 @@
   margin: auto;
   height: 2px;
   width: 113px;
-  background-color: #00b068;
+  background-color: var(--accent-text-color);
 }
 
-.btn:hover,
-.btn:focus {
-  color: #00b068;
+.js-load-more:hover,
+.js-show-less:hover,
+.js-load-more:focus,
+.js-show-less:focus {
+  color: var(--accent-text-color);
 }
 
 @media screen and (min-width: 768px) {

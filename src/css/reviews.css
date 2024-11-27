@@ -9,7 +9,6 @@
   line-height: 1.14815;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #292929;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -22,7 +21,7 @@
 }
 
 .btn-prev {
-  border: 1px solid #292929;
+  border: 1px solid var(--base-text-color);
   border-radius: 8px;
   padding: 12px;
   width: 48px;
@@ -31,16 +30,16 @@
 }
 
 .btn-prev-hidden {
-  border: 1px solid #e4e5e6;
+  border: 1px solid var(--additional-bcg-color);
   border-radius: 8px;
   padding: 12px;
   width: 48px;
   height: 48px;
-  fill: #e4e5e6;
+  fill: var(--additional-bcg-color);
 }
 
 .btn-next {
-  border: 1px solid #292929;
+  border: 1px solid var(--base-text-color);
   border-radius: 8px;
   padding: 12px;
   width: 48px;
@@ -49,7 +48,7 @@
 }
 
 .btn-next-hidden {
-  border: 1px solid #e4e5e6;
+  border: 1px solid var(--additional-bcg-color);
   border-radius: 8px;
   padding: 12px;
   width: 48px;
@@ -75,13 +74,13 @@
   padding: 32px;
   width: 592px;
   height: auto;
-  background: #e4e5e6;
+  background: var(--additional-bcg-color);
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--base-text-color);
 }
 .author-text {
   padding: 0;
@@ -104,7 +103,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--base-text-color);
   font-weight: bold;
 }
 /* Адаптивні стилі для планшетів та телефонів */
@@ -155,6 +154,6 @@
     line-height: 1.23077;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #292929;
+    color: var(--base-text-color);
   }
 }

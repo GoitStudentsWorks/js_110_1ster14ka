@@ -25,12 +25,12 @@
   line-height: 123%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  
   font-family: 'Impact', sans-serif;
   margin-bottom: 40px;
 }
 .text-green {
-  color: #00b068;
+  color: var(--accent-text-color);
 }
 .benef-list {
   display: flex;
@@ -64,7 +64,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #bcdfd1;
+  background-color: var(--accent-element-color);
   border-radius: 8px;
 }
 

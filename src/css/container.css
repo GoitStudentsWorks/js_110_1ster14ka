@@ -18,3 +18,15 @@
     max-width: 1280px;
   }
 }
+
+body {
+  background-color: var(--base-bcg-color);
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  color: var(--base-text-color);
+}

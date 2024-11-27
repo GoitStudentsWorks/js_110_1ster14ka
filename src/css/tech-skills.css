@@ -15,7 +15,7 @@
   font-size: 34px;
   text-transform: uppercase;
   white-space: nowrap;
-  background-color: #bcdfd1;
+  background-color: var(--accent-element-color);
   height: 128px;
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@
 }
 
 .marquee--reverse {
-  background-color: #e4e5e6;
+  background-color: var(--additional-bcg-color);
   transform: rotate(2deg);
   height: 128px;
 }

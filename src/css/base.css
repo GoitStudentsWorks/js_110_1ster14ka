@@ -86,11 +86,34 @@ main:has(.back-link) {
   font-style: normal;
 }
 
-section,
+/* section,
 .header {
-  background-color: #f0f0f0;
+  background-color: var(--base-bcg-color);
 }
 
 .hover-link:hover {
-  color: #00b068;
+  color: var(--accent-text-color);
+} */
+
+.theme-light {
+  --base-text-color: #292929;
+  --accent-text-color: #00B068;
+  --base-bcg-color: #F0F0F0;
+  --additional-bcg-color: #E4E5E6;
+  --accent-element-color: #BCDFD1;
+  --hover-element-color: #009156;
+  --error-color: #E74A3B;
+  --hover-bcg-color: #BBBBBB;
 }
+
+.theme-dark {
+  --base-text-color: #F0F0F0;
+  --accent-text-color: #14C57C;
+  --base-bcg-color: #1E2023;
+  --additional-bcg-color: #2A2D32;
+  --accent-element-color: #204136;
+  --hover-element-color: #009156;
+  --error-color: #E74A3B;
+  --hover-bcg-color: #3B3F45;
+}
+
