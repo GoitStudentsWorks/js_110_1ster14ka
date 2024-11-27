@@ -134,7 +134,7 @@
 .reviews .swiper-slide {
   border-radius: 16px;
   padding: 32px;
-  background: #e4e5e6;
+  background: var(--additional-bcg-color);
   height: auto;
   display: flex;
   flex-direction: column;
