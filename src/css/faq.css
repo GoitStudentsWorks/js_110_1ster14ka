@@ -1,6 +1,5 @@
 .faq-section {
   padding-top: 80px;
-  background-color: #f0f0f0;
 }
 .ac-trigger::after {
   display: none !important;
@@ -18,12 +17,11 @@
 
 .questions-container {
   max-width: 320px;
-  background-color: #f0f0f0;
+  background-color: var(--base-bcg-color);
 }
 
 .faq-heading {
   font-family: 'Impact', sans-serif;
-  color: #292929 !important;
   font-size: 52px;
   margin-bottom: 40px;
   max-width: 320px;
@@ -33,7 +31,7 @@
 }
 
 .faq-heading-span {
-  color: #00b068;
+  color: var(--accent-text-color);
 }
 
 .question-cont {
@@ -51,12 +49,13 @@
   border-left: none !important;
   border-right: none !important;
   border-top: none !important;
-  border-bottom: 1px solid #e4e5e6;
+  border-bottom: 1px solid var(--additional-bcg-color);
   margin-top: 0 !important;
+  background-color: var(--base-bcg-color);
 }
 
 .ac-header {
-  color: #292929 !important;
+  color: var(--base-text-color) !important;
   max-width: 224px !important;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
@@ -79,7 +78,7 @@
 }
 
 .ac-text {
-  color: #292929 !important;
+  color: var(--base-text-color) !important;
   max-width: 272px;
   letter-spacing: 0.05em !important;
   line-height: 1.5em !important;
