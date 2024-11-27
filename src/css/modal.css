@@ -10,6 +10,7 @@
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   background-color: var(--base-bcg-color);
+  z-index: 9999;
 }
 .test {
   margin: 0 auto;
