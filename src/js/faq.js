@@ -32,7 +32,10 @@ const accordion = new Accordion(faqContainer, {
 
     //icon rotation
     const icon = el.querySelector('.faq-icon use');
-    icon.setAttribute('href', './img/svg-icons/symbol-defs.svg#icon-vector-up');
+    icon.setAttribute(
+      'href',
+      '../img/svg-icons/symbol-defs.svg#icon-vector-up'
+    );
   },
   onClose: function (el) {
     //styles back to normal
@@ -50,7 +53,7 @@ const accordion = new Accordion(faqContainer, {
     const icon = el.querySelector('.faq-icon use');
     icon.setAttribute(
       'href',
-      './img/svg-icons/symbol-defs.svg#icon-vector-down'
+      '../img/svg-icons/symbol-defs.svg#icon-vector-down'
     );
   },
 });

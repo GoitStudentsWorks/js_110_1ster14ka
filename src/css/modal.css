@@ -17,6 +17,10 @@
   margin: 0 auto;
 }
 
+.modal-overlay .header-container .switch-container {
+  display: none;
+}
+
 .modal-overlay.active {
   visibility: visible;
   opacity: 1;
