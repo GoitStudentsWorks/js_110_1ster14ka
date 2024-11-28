@@ -1,5 +1,6 @@
 import axios from 'axios';
 import Swiper from 'swiper';
+import 'swiper/css';
 import { Navigation, Keyboard } from 'swiper/modules';
 
 const URL = 'https://portfolio-js.b.goit.study/api/reviews';
