@@ -12,9 +12,8 @@
   background-color: var(--base-bcg-color);
 
   z-index: 999;
-
 }
-.test {
+.modal-overlay .header-container {
   margin: 0 auto;
 }
 
