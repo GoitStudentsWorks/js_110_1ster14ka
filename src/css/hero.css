@@ -33,11 +33,11 @@
 }
 
 .wrapp-hero {
+  cursor: pointer;
   position: relative;
   height: 92px;
   display: flex;
   align-items: center;
-
   margin-top: 40px;
   margin-bottom: 40px;
   z-index: 2;
@@ -67,6 +67,7 @@
 }
 
 .hero-link {
+  cursor: pointer;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -164,6 +165,7 @@
   }
 
   .hero-link {
+    cursor: pointer;
     font-size: 20px;
     line-height: 160%;
   }
@@ -187,6 +189,7 @@
 
 @media only screen and (min-width: 1280px) {
   .section-hero {
+    scroll-behavior: smooth;
     padding-top: 184px;
   }
 
@@ -200,7 +203,6 @@
 
   .hero-img {
     display: inline-block;
-    border: 1px solid #000;
     border-radius: 16px;
     width: 108px;
     height: 108px;
