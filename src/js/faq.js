@@ -1,7 +1,7 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-import symbolDefs from '../img/svg-icons/symbol-defs.svg';
+// import symbolDefs from '../img/svg-icons/symbol-defs.svg';
 
 const faqContainer = document.querySelector('.questions-container');
 
@@ -34,7 +34,7 @@ const accordion = new Accordion(faqContainer, {
 
     //icon rotation
     const icon = el.querySelector('.faq-icon use');
-    icon.setAttribute('href', `${symbolDefs}#icon-vector-up`);
+    icon.setAttribute('href', './sprite.svg#icon-vector-up');
   },
   onClose: function (el) {
     //styles back to normal
@@ -50,7 +50,7 @@ const accordion = new Accordion(faqContainer, {
 
     //icon rotation
     const icon = el.querySelector('.faq-icon use');
-    icon.setAttribute('href', `${symbolDefs}#icon-vector-down`);
+    icon.setAttribute('href', './sprite.svg#icon-vector-up');
   },
 });
 
