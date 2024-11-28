@@ -1,4 +1,4 @@
-// import './js/switcher.js';
+import './js/switcher.js';
 import './js/modal.js';
 import './js/header.js';
 import './js/hero.js';

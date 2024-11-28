@@ -13,22 +13,22 @@ function toggleTheme() {
   }
 }
 
-(function () {
-  if (localStorage.getItem('theme') === 'theme-dark') {
-    setTheme('theme-dark');
-    document.getElementById('slider').checked = true;
-  } else {
-    setTheme('theme-light');
-    document.getElementById('slider').checked = false;
-  }
-})();
+// (function () {
+//   if (localStorage.getItem('theme') === 'theme-dark') {
+//     setTheme('theme-dark');
+//     document.getElementById('slider').checked = true;
+//   } else {
+//     setTheme('theme-light');
+//     document.getElementById('slider').checked = false;
+//   }
+// })();
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   const slider = document.getElementById('slider');
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.getElementById('slider');
 
-//   const currentTheme = localStorage.getItem('theme') || 'theme-light';
-//   setTheme(currentTheme);
-//   slider.checked = currentTheme === 'theme-dark';
+  const currentTheme = localStorage.getItem('theme') || 'theme-light';
+  setTheme(currentTheme);
+  slider.checked = currentTheme === 'theme-dark';
 
-//   slider.addEventListener('change', toggleTheme);
-// });
+  slider.addEventListener('change', toggleTheme);
+});
