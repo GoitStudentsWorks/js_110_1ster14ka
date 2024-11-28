@@ -15,7 +15,6 @@ closeModalBtn.addEventListener('click', () => {
   document.body.style.overflow = 'auto';
   // burgerBtn.style.display = 'flex';
 });
-console.log('Hello');
 
 // Закрытие модалки по клику вне её области
 modalOverlay.addEventListener('click', event => {

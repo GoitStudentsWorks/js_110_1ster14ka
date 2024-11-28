@@ -1,8 +1,6 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-// import symbolDefs from '../img/svg-icons/symbol-defs.svg';
-
 const faqContainer = document.querySelector('.questions-container');
 
 const accordion = new Accordion(faqContainer, {
@@ -48,11 +46,9 @@ const accordion = new Accordion(faqContainer, {
     question.classList.remove('opened');
     question.classList.add('closed');
 
-    //icon rotation
     const icon = el.querySelector('.faq-icon use');
     icon.setAttribute('href', './sprite.svg#icon-vector-up');
   },
 });
 
-//first question permanently opened
 accordion.open(0);
