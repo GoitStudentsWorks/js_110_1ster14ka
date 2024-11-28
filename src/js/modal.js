@@ -4,6 +4,7 @@ const modal = document.querySelector('.modal-overlay');
 list.addEventListener('click', event => {
   if (event.target.classList.contains('modal-link')) {
     modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
   } else {
     return;
   }
