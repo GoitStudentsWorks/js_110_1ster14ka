@@ -23,10 +23,6 @@ function toggleTheme() {
   }
 })();
 
-const slider = document.getElementById('slider');
-console.log(slider);
-console.log(document.querySelectorAll('#slider').length);
-
 // document.addEventListener('DOMContentLoaded', function () {
 //   const slider = document.getElementById('slider');
 
