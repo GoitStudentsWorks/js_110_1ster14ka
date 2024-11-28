@@ -10,10 +10,15 @@
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   background-color: var(--base-bcg-color);
+
   z-index: 999;
 }
-.test {
+.modal-overlay .header-container {
   margin: 0 auto;
+}
+
+.modal-overlay .header-container .switch-container {
+  display: none;
 }
 
 .modal-overlay.active {

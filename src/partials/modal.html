@@ -1,9 +1,14 @@
 <div class="modal-overlay">
-  <div class="header-container test">
+  <div class="header-container">
     <a href="" class="logo"
-      ><span class="logo-header-span">Lloyd</span>Jefferson.</a
+      >Lloyd<span class="logo-header-span">Jefferson.</span></a
     >
-
+    <div class="switch-container">
+      <label id="switch" class="switch">
+        <input type="checkbox" onchange="toggleTheme()" id="slider" />
+        <span class="slider round overlay"></span>
+      </label>
+    </div>
     <button type="button" class="burger-btn modal-btn">
       <svg class="icon-close" width="22" height="16">
         <use href="./img/svg-icons/symbol-defs.svg#icon-x"></use>
@@ -12,7 +17,9 @@
   </div>
   <ul class="nav-list">
     <li class="nav-item"><a href="#about" class="modal-link">About me</a></li>
-    <li class="nav-item"><a href="#project" class="modal-link">Projects</a></li>
+    <li class="nav-item">
+      <a href="#projects" class="modal-link">Projects</a>
+    </li>
     <li class="nav-item">
       <a href="#contacts" class="modal-link">Contacts</a>
     </li>

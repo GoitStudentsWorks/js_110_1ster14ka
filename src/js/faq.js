@@ -1,6 +1,8 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
+import symbolDefs from '../img/svg-icons/symbol-defs.svg';
+
 const faqContainer = document.querySelector('.questions-container');
 
 const accordion = new Accordion(faqContainer, {
@@ -13,28 +15,26 @@ const accordion = new Accordion(faqContainer, {
     //setting styles of the prev card back
 
     const allQuestions = document.querySelectorAll('.ac');
+
     allQuestions.forEach(question => {
-      question.style.backgroundColor = '#F0F0F0';
-      question.style.borderRadius = 'none';
-      question.style.borderBottom = '1px solid #e4e5e6';
+      question.classList.remove('opened', 'closed');
+      question.classList.add('closed');
     });
 
     //styles change when opening
     const question = el.closest('.ac');
     const prevQuestion = question.previousElementSibling;
-    console.log(prevQuestion);
 
     if (prevQuestion) {
       prevQuestion.style.borderBottom = 'none';
     }
 
-    question.style.backgroundColor = '#BCDFD1';
-    question.style.borderRadius = '16px';
-    question.style.borderBottom = 'none';
+    question.classList.remove('closed');
+    question.classList.add('opened');
 
     //icon rotation
     const icon = el.querySelector('.faq-icon use');
-    icon.setAttribute('href', './img/svg-icons/symbol-defs.svg#icon-vector-up');
+    icon.setAttribute('href', `${symbolDefs}#icon-vector-up`);
   },
   onClose: function (el) {
     //styles back to normal
@@ -45,16 +45,12 @@ const accordion = new Accordion(faqContainer, {
       prevQuestion.style.borderBottom = '1px solid #e4e5e6';
     }
 
-    question.style.borderRadius = 'none';
-    question.style.backgroundColor = '#F0F0F0';
-    question.style.borderBottom = '1px solid #e4e5e6';
+    question.classList.remove('opened');
+    question.classList.add('closed');
 
     //icon rotation
     const icon = el.querySelector('.faq-icon use');
-    icon.setAttribute(
-      'href',
-      './img/svg-icons/symbol-defs.svg#icon-vector-down'
-    );
+    icon.setAttribute('href', `${symbolDefs}#icon-vector-down`);
   },
 });
 

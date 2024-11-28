@@ -95,25 +95,28 @@ main:has(.back-link) {
   color: var(--accent-text-color);
 } */
 
+a:hover {
+  color: var(--hover-element-color);
+}
+
 .theme-light {
   --base-text-color: #292929;
-  --accent-text-color: #00B068;
-  --base-bcg-color: #F0F0F0;
-  --additional-bcg-color: #E4E5E6;
-  --accent-element-color: #BCDFD1;
+  --accent-text-color: #00b068;
+  --base-bcg-color: #f0f0f0;
+  --additional-bcg-color: #e4e5e6;
+  --accent-element-color: #bcdfd1;
   --hover-element-color: #009156;
-  --error-color: #E74A3B;
-  --hover-bcg-color: #BBBBBB;
+  --error-color: #e74a3b;
+  --hover-bcg-color: #bbbbbb;
 }
 
 .theme-dark {
-  --base-text-color: #F0F0F0;
-  --accent-text-color: #14C57C;
-  --base-bcg-color: #1E2023;
-  --additional-bcg-color: #2A2D32;
+  --base-text-color: #f0f0f0;
+  --accent-text-color: #14c57c;
+  --base-bcg-color: #1e2023;
+  --additional-bcg-color: #2a2d32;
   --accent-element-color: #204136;
   --hover-element-color: #009156;
-  --error-color: #E74A3B;
-  --hover-bcg-color: #3B3F45;
+  --error-color: #e74a3b;
+  --hover-bcg-color: #3b3f45;
 }
-

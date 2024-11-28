@@ -43,6 +43,17 @@
 </symbol>
 
 
+<symbol id="icon-vector-up" viewBox="0 0 50 32">
+  <path 
+    d="M46.222 28.444l-21.333-21.333-21.333 21.333" 
+    stroke="currentColor" 
+    fill="none" 
+    stroke-linejoin="miter" 
+    stroke-linecap="round" 
+    stroke-width="2"
+  ></path>
+</symbol>
+
 
 <symbol id="icon-icon-arrow-project" viewBox="0 0 32 32">
 <path fill="none" stroke="#00b068" style="stroke: var(--color1, #00b068)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M6.333 25.667l19.333-19.333M25.667 6.333h-18M25.667 6.333v18"></path>
