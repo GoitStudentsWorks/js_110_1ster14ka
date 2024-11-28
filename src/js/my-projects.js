@@ -1,5 +1,3 @@
-`use strict`
-
 const projects = document.querySelectorAll(".project-card");
 const btnLoadMore = document.querySelector(".js-load-more");
 const btnShowLess = document.querySelector(".js-show-less");
