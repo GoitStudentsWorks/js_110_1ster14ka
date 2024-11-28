@@ -34,7 +34,7 @@ const accordion = new Accordion(faqContainer, {
 
     //icon rotation
     const icon = el.querySelector('.faq-icon use');
-    icon.setAttribute('href', '/sprite.svg#icon-vector-up');
+    icon.setAttribute('href', './sprite.svg#icon-vector-up');
   },
   onClose: function (el) {
     //styles back to normal
@@ -50,10 +50,7 @@ const accordion = new Accordion(faqContainer, {
 
     //icon rotation
     const icon = el.querySelector('.faq-icon use');
-    icon.setAttribute(
-      'href',
-      './img/svg-icons/symbol-defs.svg#icon-vector-down'
-    );
+    icon.setAttribute('href', './sprite.svg#icon-vector-up');
   },
 });
 
