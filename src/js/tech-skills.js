@@ -1,20 +1,28 @@
-const bars = document.querySelectorAll('.skills-text, .skills-point');
+function duplicateContent(containerId) {
+  const container = document.getElementById(containerId);
+  const originalContent = container.querySelector('.skills__inner');
 
-bars.forEach(bar => {
-  let scrollAmount = 0;
-
-  const contentClone =
-    bar.innerHTML + '&nbsp;&nbsp;&nbsp;&nbsp;' + bar.innerHTML;
-  bar.innerHTML = contentClone;
-
-  function scrollSkills() {
-    scrollAmount -= 3;
-    bar.style.transform = `translateX(${scrollAmount}px)`;
-
-    if (Math.abs(scrollAmount) >= bar.scrollWidth / 0) {
-      scrollAmount = 0;
-    }
+  for (let i = 0; i < 4; i++) {
+    const clone = originalContent.cloneNode(true);
+    container.appendChild(clone);
   }
 
-  setInterval(scrollSkills, 20);
+  const setContentWidth = () => {
+    const itemsWidth = originalContent.offsetWidth;
+
+    container.style.width = `${itemsWidth * 5}px`;
+  };
+
+  if (document.readyState === 'complete') {
+    setContentWidth();
+  } else {
+    window.addEventListener('load', setContentWidth);
+  }
+
+  window.addEventListener('resize', setContentWidth);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  duplicateContent('top-skills');
+  duplicateContent('bottom-skills');
 });
