@@ -13,22 +13,26 @@ function toggleTheme() {
   }
 }
 
-// (function () {
-//     if (localStorage.getItem('theme') === 'theme-dark') {
-//         setTheme('theme-dark');
-//         document.getElementById('slider').checked = true;
-//     } else {
-//         setTheme('theme-light');
-//         document.getElementById('slider').checked = false;
-//     }
-// })();
+(function () {
+  if (localStorage.getItem('theme') === 'theme-dark') {
+    setTheme('theme-dark');
+    document.getElementById('slider').checked = true;
+  } else {
+    setTheme('theme-light');
+    document.getElementById('slider').checked = false;
+  }
+})();
 
-document.addEventListener('DOMContentLoaded', function () {
-  const slider = document.getElementById('slider');
+const slider = document.getElementById('slider');
+console.log(slider);
+console.log(document.querySelectorAll('#slider').length);
 
-  const currentTheme = localStorage.getItem('theme') || 'theme-light';
-  setTheme(currentTheme);
-  slider.checked = currentTheme === 'theme-dark';
+// document.addEventListener('DOMContentLoaded', function () {
+//   const slider = document.getElementById('slider');
 
-  slider.addEventListener('change', toggleTheme);
-});
+//   const currentTheme = localStorage.getItem('theme') || 'theme-light';
+//   setTheme(currentTheme);
+//   slider.checked = currentTheme === 'theme-dark';
+
+//   slider.addEventListener('change', toggleTheme);
+// });
