@@ -44,7 +44,8 @@ form.addEventListener('submit', function (event) {
 
       sendMessage(data);
 
-      backdrop.classList.add('is-open'); // Показуємо фон
+      backdrop.classList.add('is-open');// Показуємо фон
+      document.body.style.overflow = 'hidden';
       form.reset(); // Очищуємо форму
     })
     .catch(error => {
@@ -82,6 +83,7 @@ function sendMessage(data) {
 
 function closeModal() {
   backdrop.classList.remove('is-open');
+  document.body.style.overflow = 'auto';
 }
 
 closeModalButton.addEventListener('click', closeModal);
