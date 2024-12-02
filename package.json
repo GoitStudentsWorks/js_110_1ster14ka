@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/js-avengers/",
+    "build": "vite build --base=/js_110_1ster14ka/",
     "preview": "vite preview"
   },
   "devDependencies": {
