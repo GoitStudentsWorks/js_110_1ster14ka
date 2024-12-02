@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/js_110_1ster14ka/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Avangers</title>
+    <script type="module" crossorigin src="/js_110_1ster14ka/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_110_1ster14ka/assets/vendor-DyksTf9I.js">
+    <link rel="stylesheet" crossorigin href="/js_110_1ster14ka/assets/vendor-Bj7nYe4R.css">
+    <link rel="stylesheet" crossorigin href="/js_110_1ster14ka/assets/index-HfyceUDe.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <a href="" class="logo"
+      >Lloyd<span class="logo-header-span">Jefferson.</span></a
+    >
+
+    <div class="switch-container">
+      <label id="switch" class="switch">
+        <input type="checkbox" id="slider" />
+        <span class="slider round overlay"></span>
+      </label>
+    </div>
+
+    <nav class="navigation">
+      <ul class="nav-list-head">
+        <li class="nav-item-head">
+          <a href="#about" class="hover-link">About me</a>
+        </li>
+        <li class="nav-item-head">
+          <a href="#projects" class="hover-link">Projects</a>
+        </li>
+        <li class="nav-item-head">
+          <a href="#contacts" class="hover-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="burger-btn">
+      <svg class="icon-burger" width="22" height="16">
+        <use href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+
+  <!-- <script src="./js/switcher.js"></script> -->
+</header>
+
+    <main>
+      <section class="section-hero">
+  <div class="container hero-container">
+    <h1 class="title">
+      Hello, I am
+      <img
+        class="hero-img"
+        srcset="data:image/jpeg;base64,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 1x, /js_110_1ster14ka/assets/s2@2x-rG5fwTJR.jpg 2x"
+        src="./img/imgs-about-me/s2.jpg"
+        alt="user"
+      /><span class="span-title">Fullstack developer</span>
+    </h1>
+    <div class="wrapp-hero-text">
+      <div class="wrapp-hero">
+        <div class="wrapp-arrow">
+          <svg class="hero-arrow" width="28">
+            <use
+              href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-icon-arrow2-1"
+            ></use>
+          </svg>
+          <a href="#contacts" class="hero-link">Order the project</a>
+        </div>
+        <div class="background-wrapp"></div>
+      </div>
+      <p class="hero-text">
+        I work with people all over the world to create
+        <span class="green-text">impressive</span> and
+        <span class="green-text">functional websites</span> that reflect each
+        client’s unique personality.
+      </p>
+    </div>
+  </div>
+  <ul class="hero-list">
+    <li class="hero-item">
+      <a
+        href="https://www.instagram.com/goitclub/"
+        class="hover-link"
+        target="_blank"
+        >Instagram</a
+      >
+    </li>
+    <li class="hero-item">
+      <a
+        href="https://www.facebook.com/goITclub/"
+        class="hover-link"
+        target="_blank"
+        >Facebook</a
+      >
+    </li>
+    <li class="hero-item">
+      <a
+        href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+        target="_blank"
+        target="_blank"
+        class="hover-link"
+        >Linkedin</a
+      >
+    </li>
+    <li class="hero-item">
+      <a
+        href="https://github.com/1ster14ka/js-avengers"
+        class="hover-link"
+        target="_blank"
+        >GitHub</a
+      >
+    </li>
+  </ul>
+</section>
+
+      <section class="section-about" id="about">
+  <div class="container about-container">
+    <h2 class="about-title">ABOUT <span class="span-me">ME</span></h2>
+    <div class="wrapp-bio">
+      <img
+        srcset="/js_110_1ster14ka/assets/s3-DuQV38GB.jpg 1x, /js_110_1ster14ka/assets/s3@2x-3XDLJl91.jpg 2x"
+        src="/js_110_1ster14ka/assets/s3-DuQV38GB.jpg"
+        alt="about me"
+        class="img-about"
+      />
+
+      <div class="wrapp-bio-text">
+        <h3 class="title-about">BIO</h3>
+        <p class="text-about">
+          I'm Lloyd Jefferson, a talented programmer specializing  in software
+          development. My expertise spans various programming languages and
+          technologies, and I am dedicated to continually enhancing my skills. I
+          thrive on seeking unconventional and creative solutions to problems,
+          leveraging a high level of analytical skills to effectively tackle
+          even the most challenging tasks.
+        </p>
+        <p class="text-about">
+          Adaptable to both independent and team-oriented work, I collaborate
+          seamlessly with colleagues, exchanging ideas and finding optimal
+          solutions. My professional maturity enables me to navigate challenges
+          and stressful situations with a calm demeanor, maintaining a
+          consistently high quality of work. Committed to self-improvement, I
+          actively engage in studying new technologies and practices to stay
+          current with the  latest innovations in the field.
+        </p>
+        <div class="wrapp-bg"><div class="bg-img"></div></div>
+      </div>
+    </div>
+    <div class="wrapp-about-text">
+      <div class="wrapp-education">
+        <h3 class="title-about">EDUCATION</h3>
+        <ul class="education-list">
+          <li class="education-item">
+            <p class="text-about">
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </p>
+          </li>
+          <li class="education-item">
+            <p class="text-about">
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </p>
+          </li>
+          <li class="education-item">
+            <p class="text-about">
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="wrapp-role">
+        <h3 class="title-about">ROLE</h3>
+        <ul class="role-list">
+          <li class="role-item">
+            <p class="text-about">Frontend development</p>
+          </li>
+          <li class="role-item">
+            <p class="text-about">HeadlessCMS, Wordpress</p>
+          </li>
+          <li class="role-item"><p class="text-about">Blender (enjoy)</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="tech-skills">
+  <div class="container-fluid">
+    <div class="skills__container">
+      <h2 class="visually-hidden">Tech skills</h2>
+
+      <div class="skills__line skills__line-top">
+        <div class="skills__content" id="top-skills">
+          <ul class="skills__inner">
+            <li class="skills__item">HTML/CSS</li>
+            <li class="skills__item">JAVASCRIPT</li>
+            <li class="skills__item">REACT</li>
+            <li class="skills__item">NODE.JS</li>
+            <li class="skills__item">REACT NATIVE</li>
+            <li class="skills__item">TYPESCRIPT</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="skills__line skills__line-bottom">
+        <div class="skills__content" id="bottom-skills">
+          <ul class="skills__inner">
+            <li class="skills__item">HTML/CSS</li>
+            <li class="skills__item">JAVASCRIPT</li>
+            <li class="skills__item">REACT</li>
+            <li class="skills__item">NODE.JS</li>
+            <li class="skills__item">REACT NATIVE</li>
+            <li class="skills__item">TYPESCRIPT</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section-projects" id="projects">
+  <div class="container">
+    <h2 class="catalog-title">my <span>projects</span></h2>
+    <ul class="project-catalog">
+      <li class="project-card">
+        <img
+          class="project-photo"
+          srcset="/js_110_1ster14ka/assets/s5-img1-CDoCPjNo.jpg 1x, /js_110_1ster14ka/assets/s5-img1@2x-Ba7KpPl6.jpg 2x"
+          src="/js_110_1ster14ka/assets/s5-img1-CDoCPjNo.jpg"
+          alt=""
+        />
+        <p class="technologies">React, JavaScript, Node JS, Git</p>
+        <div class="project">
+          <h3 class="project-name">wallet webservice</h3>
+          <a
+            class="project-link"
+            href="https://github.com/1ster14ka/js-avengers"
+            target="_blank"
+            >visit
+            <svg>
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-icon-arrow-1"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="project-card">
+        <img
+          class="project-photo"
+          srcset="/js_110_1ster14ka/assets/s5-img2-Ut9iqUeY.jpg 1x, /js_110_1ster14ka/assets/s5-img2@2x-BSZahzuF.jpg 2x"
+          src="/js_110_1ster14ka/assets/s5-img1-CDoCPjNo.jpg"
+          alt=""
+        />
+        <p class="technologies">React, JavaScript, Node JS, Git</p>
+        <div class="project">
+          <h3 class="project-name">green harvest online store</h3>
+          <a
+            class="project-link"
+            href="https://github.com/1ster14ka/js-avengers"
+            target="_blank"
+            >visit
+            <svg>
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-icon-arrow-1"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="project-card">
+        <img
+          class="project-photo"
+          srcset="/js_110_1ster14ka/assets/s5-img3-B2oHsOsy.jpg 1x, /js_110_1ster14ka/assets/s5-img3@2x-DBfvXWEj.jpg 2x"
+          src="/js_110_1ster14ka/assets/s5-img1-CDoCPjNo.jpg"
+          alt=""
+        />
+        <p class="technologies">React, JavaScript, Node JS, Git</p>
+        <div class="project">
+          <h3 class="project-name">English excellence webservice</h3>
+          <a
+            class="project-link"
+            href="https://github.com/1ster14ka/js-avengers"
+            target="_blank"
+            >visit
+            <svg>
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-icon-arrow-1"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="project-card">
+        <img
+          class="project-photo"
+          srcset="/js_110_1ster14ka/assets/s5-img4-CMOjpA4T.jpg 1x, /js_110_1ster14ka/assets/s5-img4@2x-Bh2tYvzU.jpg 2x"
+          src="/js_110_1ster14ka/assets/s5-img1-CDoCPjNo.jpg"
+          alt=""
+        />
+        <p class="technologies">React, JavaScript, Node JS, Git</p>
+        <div class="project">
+          <h3 class="project-name">power pulse webservice</h3>
+          <a
+            class="project-link"
+            href="https://github.com/1ster14ka/js-avengers"
+            target="_blank"
+            >visit
+            <svg>
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-icon-arrow-1"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="project-card">
+        <img
+          class="project-photo"
+          srcset="/js_110_1ster14ka/assets/s5-img5-m5miY4dg.jpg 1x, /js_110_1ster14ka/assets/s5-img5@2x-D4MjAeVE.jpg 2x"
+          src="/js_110_1ster14ka/assets/s5-img1-CDoCPjNo.jpg"
+          alt=""
+        />
+        <p class="technologies">React, JavaScript, Node JS, Git</p>
+        <div class="project">
+          <h3 class="project-name">mimino website</h3>
+          <a
+            class="project-link"
+            href="https://github.com/1ster14ka/js-avengers"
+            target="_blank"
+            >visit
+            <svg>
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-icon-arrow-1"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="project-card">
+        <img
+          class="project-photo"
+          srcset="/js_110_1ster14ka/assets/s5-img6-JRMS9we3.jpg 1x, /js_110_1ster14ka/assets/s5-img6@2x-CozQXYqr.jpg 2x"
+          src="/js_110_1ster14ka/assets/s5-img1-CDoCPjNo.jpg"
+          alt=""
+        />
+        <p class="technologies">React, JavaScript, Node JS, Git</p>
+        <div class="project">
+          <h3 class="project-name">vyshyvanka vibes Landing Page</h3>
+          <a
+            class="project-link"
+            href="https://github.com/1ster14ka/js-avengers"
+            target="_blank"
+            >visit
+            <svg>
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-icon-arrow-1"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="project-card">
+        <img
+          class="project-photo"
+          srcset="/js_110_1ster14ka/assets/s5-img7-mR0b0ABC.jpg 1x, /js_110_1ster14ka/assets/s5-img7@2x-B6JvUeyk.jpg 2x"
+          src="/js_110_1ster14ka/assets/s5-img1-CDoCPjNo.jpg"
+          alt=""
+        />
+        <p class="technologies">React, JavaScript, Node JS, Git</p>
+        <div class="project">
+          <h3 class="project-name">chego jewelry website</h3>
+          <a
+            class="project-link"
+            href="https://github.com/1ster14ka/js-avengers"
+            target="_blank"
+            >visit
+            <svg>
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-icon-arrow-1"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="project-card">
+        <img
+          class="project-photo"
+          srcset="/js_110_1ster14ka/assets/s5-img8-Bhw0Rpc0.jpg 1x, /js_110_1ster14ka/assets/s5-img8@2x-BOWrYRhA.jpg 2x"
+          src="/js_110_1ster14ka/assets/s5-img1-CDoCPjNo.jpg"
+          alt=""
+        />
+        <p class="technologies">React, JavaScript, Node JS, Git</p>
+        <div class="project">
+          <h3 class="project-name">energy flow webservice</h3>
+          <a
+            class="project-link"
+            href="https://github.com/1ster14ka/js-avengers"
+            target="_blank"
+            >visit
+            <svg>
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-icon-arrow-1"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="project-card">
+        <img
+          class="project-photo"
+          srcset="/js_110_1ster14ka/assets/s5-img9-CrxItxua.jpg 1x, /js_110_1ster14ka/assets/s5-img9@2x-B8PEXJOt.jpg 2x"
+          src="/js_110_1ster14ka/assets/s5-img1-CDoCPjNo.jpg"
+          alt=""
+        />
+        <p class="technologies">React, JavaScript, Node JS, Git</p>
+        <div class="project">
+          <h3 class="project-name">fruitbox online store</h3>
+          <a
+            class="project-link"
+            href="https://github.com/1ster14ka/js-avengers"
+            target="_blank"
+            >visit
+            <svg>
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-icon-arrow-1"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="project-card">
+        <img
+          class="project-photo"
+          srcset="/js_110_1ster14ka/assets/s5-img10-BX5hveBW.jpg 1x, /js_110_1ster14ka/assets/s5-img10@2x-B3tyX0nH.jpg 2x"
+          src="/js_110_1ster14ka/assets/s5-img1-CDoCPjNo.jpg"
+          alt=""
+        />
+        <p class="technologies">React, JavaScript, Node JS, Git</p>
+        <div class="project">
+          <h3 class="project-name">starlight studio landing page</h3>
+          <a
+            class="project-link"
+            href="https://github.com/1ster14ka/js-avengers"
+            target="_blank"
+            >visit
+            <svg>
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-icon-arrow-1"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+    </ul>
+    <div class="btn-container">
+      <button class="js-load-more">LOAD MORE</button>
+      <button class="js-show-less">SHOW LESS</button>
+    </div>
+  </div>
+</section>
+
+
+      <section class="benefits">
+  <div class="container container-benef">
+    <div class="bg-img-benef">
+      <img
+        srcset="/js_110_1ster14ka/assets/bg-desk-benefits-CPrIDe4E.png 1x, /js_110_1ster14ka/assets/bg-desk-benefits@2x-CFzx_Kn2.png 2x"
+        src="/js_110_1ster14ka/assets/bg-desk-benefits-CPrIDe4E.png"
+        alt="backgroun-img"
+      />
+    </div>
+    <h2 class="title-benef">
+      <span class="text-green">Benefits</span> of working with me
+    </h2>
+    <ul class="benef-list">
+      <li class="benef-item benef-right">
+        <div class="test">
+          <div class="svg">
+            <svg class="benef-icon" width="24" height="24">
+              <use href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-user-1"></use>
+            </svg>
+          </div>
+          <h3 class="benef-subtitle">Expertise</h3>
+          <p class="benef-text">
+            With extensive experience in development, I have a deep
+            understanding of programming and website development.
+          </p>
+        </div>
+      </li>
+
+      <li class="benef-item benef-inline">
+        <div class="test">
+          <div class="svg">
+            <svg class="benef-icon" width="24" height="24">
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-message-chat-circle-1"
+              ></use>
+            </svg>
+          </div>
+          <h3 class="benef-subtitle">Communication</h3>
+          <p class="benef-text">
+            Understanding your needs and wants is my priority and I am always
+            available for discussions and open to corrections.
+          </p>
+        </div>
+      </li>
+      <li class="benef-item benef-inline">
+        <div class="test">
+          <div class="svg">
+            <svg class="benef-icon" width="24" height="24">
+              <use href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-brush-1"></use>
+            </svg>
+          </div>
+          <h3 class="benef-subtitle">Art</h3>
+          <p class="benef-text">
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </div>
+      </li>
+      <li class="benef-item benef-left">
+        <div class="test">
+          <div class="svg">
+            <svg class="benef-icon" width="24" height="24">
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-hourglass-1"
+              ></use>
+            </svg>
+          </div>
+          <h3 class="benef-subtitle">Urgent execution</h3>
+          <p class="benef-text">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="faq-section">
+  <div class="container faq-container">
+    <h2 class="faq-heading">
+      frequently asked <span class="faq-heading-span">question</span>
+    </h2>
+    <ul class="questions-container">
+      <!-- Question one -->
+      <li class="ac">
+        <div class="question-cont">
+          <h3 class="ac-header">
+            What programming languages ​​are most often used in your project?
+          </h3>
+          <button class="ac-trigger">
+            <svg class="faq-icon" width="24" height="24">
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-vector-down"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="ac-panel">
+          <p class="ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+
+      <!-- Question two -->
+      <li class="ac">
+        <div class="question-cont">
+          <h3 class="ac-header">What are the deadlines for the project?</h3>
+          <button class="ac-trigger">
+            <svg class="faq-icon" width="24" height="24">
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-vector-down"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="ac-panel">
+          <p class="ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <!-- Question three -->
+      <li class="ac">
+        <div class="question-cont">
+          <h3 class="ac-header">What payment methods do you accept?</h3>
+          <button class="ac-trigger">
+            <svg class="faq-icon" width="24" height="24">
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-vector-down"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="ac-panel">
+          <p class="ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <!-- Question four -->
+      <li class="ac">
+        <div class="question-cont">
+          <h3 class="ac-header">How can I contact you?</h3>
+          <button class="ac-trigger">
+            <svg class="faq-icon" width="24" height="24">
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-vector-down"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="ac-panel">
+          <p class="ac-text">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <!-- Question five -->
+      <li class="ac">
+        <div class="question-cont">
+          <h3 class="ac-header">Do you provide advice or support?</h3>
+          <button class="ac-trigger">
+            <svg class="faq-icon" width="24" height="24">
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-vector-down"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="ac-panel">
+          <p class="ac-text">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <!-- Question six -->
+      <li class="ac">
+        <div class="question-cont">
+          <h3 class="ac-header">
+            What does the process of developing a software product look like
+            from idea to implementation?
+          </h3>
+          <button class="ac-trigger">
+            <svg class="faq-icon" width="24" height="24">
+              <use
+                href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-vector-down"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="ac-panel">
+          <p class="ac-text">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="reviews">
+  <div class="container">
+    <h2 class="reviews-title">Reviews</h2>
+
+    <div class="swiper reviews-swiper">
+      <ul class="swiper-wrapper reviews-swiper-list"></ul>
+
+      <div class="swiper-btn-list">
+        <button type="button" class="swiper-btn swiper-btn-prev">
+          <svg width="24" height="24">
+            <use
+              href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-arrow-narrow-left"
+            ></use>
+          </svg>
+        </button>
+        <button type="button" class="swiper-btn swiper-btn-next">
+          <svg width="24" height="24">
+            <use
+              href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-arrow-narrow-right"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="contacts-section" id="contacts">
+  <div class="container container-wt">
+    <div class="head-decor">
+      <h2 class="head-work">
+        let’s
+        <span class="common-span">work together</span>
+      </h2>
+      <img
+        srcset="/js_110_1ster14ka/assets/bg-desk-benefits-CPrIDe4E.png 1x, /js_110_1ster14ka/assets/bg-desk-benefits@2x-CFzx_Kn2.png 2x"
+        src="../img/bg-img/bg-desk-benefits.png"
+        alt=""
+        class="wt-decor"
+      />
+    </div>
+    <div class="form-wrap">
+      <ul class="form-colomn">
+        <li>
+          <p class="text-idea">
+            Contact me to transform your ideas into exceptional solutions.
+          </p>
+        </li>
+        <li>
+          <div class="address">
+            <ul class="address-menu">
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use
+                      href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-phone-1"
+                    ></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="tel:+380503247690"
+                    target="_blank"
+                    >+38 050 324 76 90</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use
+                      href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-message-1"
+                    ></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="mailto:info@goit.ua"
+                    target="_blank"
+                    >info@goit.ua</a
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="icon-text">
+                  <svg class="title-icon" width="24" height="24">
+                    <use
+                      href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-icon-1"
+                    ></use>
+                  </svg>
+                  <a
+                    class="link-address"
+                    href="https://www.google.com/maps/search/?api=1&query=Київ+Ю.Іллєнка+12"
+                    target="_blank"
+                  >
+                    м. Київ, вул. Ю. Іллєнка, 12
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="form-div">
+        <form class="feedback-form" id="contactForm" autocomplete="off">
+          <label for="email" class="visualy-hidden"></label>
+          <input
+            class="input"
+            id="email"
+            type="email"
+            placeholder="Your email*"
+            name="email"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            autocomplete="email"
+          />
+          <label for="message" class="visually-hidden"></label>
+          <textarea
+            class="input txt-ar"
+            id="message"
+            placeholder="Message"
+            name="message"
+            rows="8"
+            autocomplete="off"
+          ></textarea>
+          <button class="btn" type="submit" id="sendMessage">
+            SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Модальне вікно -->
+  <div class="backdrop" id="backdrop">
+    <div class="modal" id="successModal">
+      <button type="button" class="modal-close" id="closeModal">
+        <svg class="modal-icon" width="12" height="12">
+          <use href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-x"></use>
+        </svg>
+      </button>
+      <p class="modalTitle common-span" id="jsTitle"></p>
+      <p class="modalText" id="jsText"></p>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container container-footer">
+    <div class="wrapp-logo">
+      <a href="#" class="logo"
+        >Lloyd<span class="logo-header-span">Jefferson.</span></a
+      >
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            class="hover-link"
+            target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            class="hover-link"
+            target="_blank"
+            >Facebook</a
+          >
+        </li>
+        <li class="footer-item">
+          <a
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            target="_blank"
+            class="hover-link"
+            >Linkedin</a
+          >
+        </li>
+        <li class="footer-item">
+          <a
+            href="https://github.com/1ster14ka/js-avengers"
+            class="hover-link"
+            target="_blank"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+      <p class="copyright">© Copyright 2024. Made by LloydJefferson</p>
+    </div>
+  </div>
+</footer>
+
+    <div class="modal-overlay">
+  <div class="header-container">
+    <a href="" class="logo"
+      >Lloyd<span class="logo-header-span">Jefferson.</span></a
+    >
+    <!-- <div class="switch-container">
+      <label id="switch" class="switch">
+        <input type="checkbox" onchange="toggleTheme()" id="slider" />
+        <span class="slider round overlay"></span>
+      </label>
+    </div> -->
+    <button type="button" class="burger-btn modal-btn">
+      <svg class="icon-close" width="22" height="16">
+        <use href="/js_110_1ster14ka/assets/symbol-defs-qnGV90tk.svg#icon-x"></use>
+      </svg>
+    </button>
+  </div>
+  <ul class="nav-list">
+    <li class="nav-item"><a href="#about" class="modal-link">About me</a></li>
+    <li class="nav-item">
+      <a href="#projects" class="modal-link">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a href="#contacts" class="modal-link">Contacts</a>
+    </li>
+  </ul>
+  <img
+    srcset="/js_110_1ster14ka/assets/bg-mob-hero-9ZBS2J1q.png 1x, /js_110_1ster14ka/assets/bg-mob-hero@2x-BQcHm9jJ.png 2x"
+    src="/js_110_1ster14ka/assets/bg-mob-hero-9ZBS2J1q.png"
+    alt="background"
+    class="bg-header"
+  />
+</div>
+
+
+    <!-- <script type="module" src="./js/switcher.js"></script> -->
+  </body>
+</html>
